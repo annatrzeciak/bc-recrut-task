@@ -8,6 +8,7 @@ RandomNumbers.constructor = RandomNumbers;
 
 RandomNumbers.prototype.init = function() {
   const self = this;
+    
 
   axios.get('http://localhost:3000/random-numbers')
     .then(function(response) {
@@ -26,12 +27,15 @@ RandomNumbers.prototype.init = function() {
 
 RandomNumbers.prototype.render = function() {
   const container = this.getDOMElement();
+    if(container.childElementCount>0){
+        container.innerHTML='';
+    }
 
   this.numbers.forEach(function(number) {
       const listElement = document.createElement('li');
       listElement.classList.add('list-group-item');
       listElement.innerHTML = number.id;
-
       container.appendChild(listElement);
+      
   });
 };
