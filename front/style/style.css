@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Exo2_Bold';
+    src: url('Exo2-Bold.ttf');
+}
+body{
+        font-family: 'Exo2_Bold';
+
+    
+}
+.card{
+        margin: 25px 15px;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 0 42px 0 rgba(0,0,0,.33);
+
+}
+.card-header{
+    font-size: 20px;
+}
+i{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+i.lottery{
+    background-image: url('../img/lottery.svg');
+}
+i.ranking{
+        background-image: url('../img/podium.svg');
+
+}
+i.gold-medal{
+        background-image: url('../img/gold-medal.svg');
+
+}
+i.silver-medal{
+        background-image: url('../img/silver-medal.svg');
+
+}i.bronze-medal{
+        background-image: url('../img/bronze-medal.svg');
+
+}
+.list-group-item{
+    padding-left: 60px;
+    border-left: 0;
+    border-right: 0;
+    
+;
+}
+.list-group-item i{
+margin-left: -40px;
+    
+}
+.card .number-count{
+    float: right;
+    color: #c6c6c6;
+    margin-left: 20px;
+}

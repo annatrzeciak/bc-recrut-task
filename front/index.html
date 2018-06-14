@@ -2,6 +2,7 @@
 <html>
 
 <head>
+   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./js/component.js"></script>
     <script src="./js/components/ranking.component.js"></script>
@@ -9,22 +10,27 @@
 
     <script src="./js/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link rel="stylesheet" href="./style/style.css">
+
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
+                        <i class="ranking"></i>
                         Numbers ranking
+                        <span class="number-count">count</span>
                     </div>
                     <ul id="numbers-ranking" class="list-group list-group-flash"></ul>
                 </div>
             </div>
-            <div class="col-sm">
+            <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
+                       <i class="lottery"></i>
                         Latest numbers
                     </div>
                     <ul id="random-numbers" class="list-group list-group-flash"></ul>
